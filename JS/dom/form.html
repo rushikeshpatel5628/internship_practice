@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="formHandling.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Submission</h1>
+        <form id="submissionForm" onsubmit="submitHandler(event)">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required onkeyup="checkName()">
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="result-container">
+        <h2>Submitted Information:</h2>
+        <div class="result">
+            <p><strong>Name:</strong> <span id="submittedName"></span></p>
+            <p><strong>Email:</strong> <span id="submittedEmail"></span></p>
+        </div>
+    </div>
+</body>
+</html>

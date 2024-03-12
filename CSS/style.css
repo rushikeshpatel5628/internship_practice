@@ -1,0 +1,155 @@
+ body {
+    color: white;
+    margin: 0px;
+    padding: 0 px;
+    background: url('img4.jpg');
+    height: 100vh;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left {
+    margin: 4px;
+}
+
+.logo{
+    margin-top: .5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    color: white;
+    margin: 0 15px;
+    font-size: 1.3rem;
+}
+
+.links {
+    flex: 1;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 3px;
+    
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease-in-out;
+    font-size: 15px;
+    padding: 8px 16px;
+    width: 5rem;
+    height: 2rem;
+    background-color: white;
+    color: #413a3a;
+    font-weight: bold;
+} 
+
+.btn:hover {
+    font-weight: bold;
+    color: #4a3e3e;
+    box-shadow: 0 5px 10px rgba(245, 245, 245, 0.758);
+}
+
+
+.links a{
+    text-decoration: none;
+}
+
+.links a:hover, .links a:active{
+    text-decoration: underline;
+    color: grey;
+}
+
+.container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        max-width: 600px; 
+        text-align: center; 
+        /* padding: 20px; */
+}
+
+.form-group input{
+    display: block;
+    padding: 6px;
+    margin: 6px;
+    margin-left: 2px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    text-align: center;
+    /* font-weight: bold; */
+    background-color: #fff;
+    width: 250px;
+    border: 2px solid white;
+}
+
+.form-group input:hover{
+    border: 2px solid #fff
+}
+
+.form-group {
+    margin: 0 0 11px 0;
+}
+
+main {
+    display: grid;
+    /* place-items: center; */
+    justify-content: center;
+    /* height: 100vh; */
+    grid-template-rows: 298px 260px;
+    height: 500px;
+    width: 700px;
+    margin-left: 27rem;
+    margin-bottom: 5rem;
+} 
+
+.submit {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.form {
+    display: grid;
+    /* place-items: center; */
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.heading {
+    /* background-color: #dcd5d5; */
+    height: 60px;
+}
+
+.buttons-link {
+    height: 10px;
+    text-align: right;
+    margin-top: 20px;
+    position: relative;
+    top: 34px;
+
+}
+
+.email-link a{
+    margin-top: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.call-link a{
+    margin-right: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.call-link {
+    margin-top: 10px;
+}
